@@ -21,7 +21,12 @@ import javax.swing.JOptionPane;
  */
 public class Time
 {
-	public static void main(String[] args) 
+	public static void main(String[] args) {
+		int totalSeconds = getTotalSeconds("10:10:10");
+		System.out.println("**GH Total Seconds =	"+totalSeconds);
+		}
+	
+/*	public static void main(String[] args) 
 	{
 		{
 			
@@ -59,7 +64,7 @@ public class Time
 		}
 		
 	}
-
+*/
 	public static int getTotalSeconds(String time)throws NumberFormatException, StringIndexOutOfBoundsException {
 		
 		int hours = getTotalHours(time);
